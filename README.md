@@ -1,4 +1,3 @@
-# arvore_busca
 # Algoritmo de Árvore de Busca
 
 ## Especificação do Projeto
