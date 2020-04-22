@@ -13,6 +13,10 @@ public class BinaryTree {
         this.nodeRoot = root;
     }
 
+    public Node getNodeRoot() {
+        return this.nodeRoot;
+    }
+
     public void addValue(int value) {
         this.nodeRoot = this.addRecursive(this.nodeRoot, value);
     }
@@ -23,15 +27,13 @@ public class BinaryTree {
         }
 
         if(value < tmpNode.getValue()) {
-            tmpNode.setNodeRight(this.addRecursive(tmpNode.getNodeLeft(), value));
-            return tmpNode;
+            tmpNode.setNodeLeft(this.addRecursive(tmpNode.getNodeLeft(), value));
         }
         else if(value > tmpNode.getValue()) {
             tmpNode.setNodeRight(this.addRecursive(tmpNode.getNodeRight(), value));
-            return tmpNode;
-        } else {
-            return tmpNode;
         }
+
+        return tmpNode;
     }
 
     public int countNode()
@@ -45,5 +47,18 @@ public class BinaryTree {
         } else {
             return countNodeRecursive(tmpNode.getNodeLeft()) + 1 + this.countNodeRecursive(tmpNode.getNodeRight());
         }
+    }
+
+    public boolean isEmpty()
+    {
+        if(this.nodeRoot == null)
+            return true;
+
+        int count = this.countNodeRecursive(this.nodeRoot);
+        return count == 0;
+    }
+
+    private void printNode(Node node) {
+        System.out.print(" " + node.getValue());
     }
 }
