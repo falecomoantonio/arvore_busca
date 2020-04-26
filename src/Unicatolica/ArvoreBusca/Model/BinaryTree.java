@@ -57,8 +57,4 @@ public class BinaryTree {
         int count = this.countNodeRecursive(this.nodeRoot);
         return count == 0;
     }
-
-    private void printNode(Node node) {
-        System.out.print(" " + node.getValue());
-    }
 }
