@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c81059f3-5cae-4798-9a45-ef552a72724f" name="Default Changelist" comment="" />
+    <list default="true" id="c81059f3-5cae-4798-9a45-ef552a72724f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Unicatolica/ArvoreBusca/Logic/AbstractSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Unicatolica/ArvoreBusca/Logic/DepthSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Unicatolica/ArvoreBusca/Logic/Interfaces/IAbstractSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Unicatolica/ArvoreBusca/Logic/SpreadSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Unicatolica/ArvoreBusca/Model/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Unicatolica/ArvoreBusca/Model/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Unicatolica/ArvoreBusca/Model/Stack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Unicatolica/ArvoreBusca/Program/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Unicatolica/ArvoreBusca/Program/Program.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -13,6 +30,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1apLTdtp7RCLneZCmlJfKCk9ktW" />
   <component name="ProjectViewState">
@@ -21,7 +39,32 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unicatolica.ArvoreBusca.Program.Program" />
+      <module name="ArvoreBusca" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unicatolica.ArvoreBusca.Program.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Program" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -47,5 +90,39 @@
       <updated>1587427597438</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser" timestamp="1587917762714">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="488" y="77" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1587917762714" />
+    <state width="1323" height="462" key="GridCell.Tab.0.bottom" timestamp="1587918023567">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="462" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587918023567" />
+    <state width="1323" height="462" key="GridCell.Tab.0.center" timestamp="1587918023567">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="462" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1587918023567" />
+    <state width="1323" height="462" key="GridCell.Tab.0.left" timestamp="1587918023567">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="462" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1587918023567" />
+    <state width="1323" height="462" key="GridCell.Tab.0.right" timestamp="1587918023567">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="462" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1587918023567" />
+    <state x="184" y="10" key="SettingsEditor" timestamp="1587908586521">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="184" y="10" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1587908586521" />
+    <state x="387" y="269" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1587917551751">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="387" y="269" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.738@0.0.1366.738" timestamp="1587917551751" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1587917377225">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1587917377225" />
   </component>
 </project>

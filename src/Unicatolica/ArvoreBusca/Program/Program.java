@@ -1,8 +1,6 @@
 package Unicatolica.ArvoreBusca.Program;
 
-import Unicatolica.ArvoreBusca.Logic.BinaryTreePrinter;
-import Unicatolica.ArvoreBusca.Logic.BinaryTreeUtil;
-import Unicatolica.ArvoreBusca.Logic.BinaryTreeWrapper;
+import Unicatolica.ArvoreBusca.Logic.*;
 import Unicatolica.ArvoreBusca.Model.BinaryTree;
 
 import java.lang.reflect.Array;
@@ -36,12 +34,36 @@ public class Program {
 
     private static void printMenu()
     {
-        System.out.println("[ 1 ] - Imprimir em Profundidade");
-        System.out.println("[ 2 ] - Imprimir em Largura");
-        System.out.println("[ 3 ] - Procurar um valor e comparar (Profundidade x Largura)");
-        System.out.println("[ 4 ] - Limpar e Preencher Árvore Manualmente");
-        System.out.println("[ 5 ] - Limpar e Preencher Árvore Automaticamente");
+        System.out.println("[ 1 ] - Procurar um valor e comparar (Profundidade x Largura)");
+        System.out.println("[ 2 ] - Limpar e Preencher Árvore Manualmente");
+        System.out.println("[ 3 ] - Limpar e Preencher Árvore Automaticamente");
         System.out.println("[ 0 ] - Sair");
+    }
+
+    public static void compare() {
+        if(tree == null) {
+            System.err.println("Árvore não foi inicializada");
+        }
+        else {
+            System.out.print("Digite um número: ");
+            boolean continueLoop = false;
+            int valueSearch = 0;
+
+            do {
+                String inputValue = in.next();
+                try {
+                    valueSearch = Integer.parseInt(inputValue);
+                    continueLoop = false;
+                } catch (Exception e) {
+                    continueLoop = true;
+                }
+            } while(continueLoop);
+
+            AbstractSearch ds = new DepthSearch(),
+                           ss = new SpreadSearch();
+            ds.setTree(tree,valueSearch);
+            ss.setTree(tree,valueSearch);
+        }
     }
 
     public static void main(String[] args) {
@@ -65,11 +87,9 @@ public class Program {
 
             switch (value) {
                 case 0: continueProgram = false; break;
-                case 1: System.out.println("Opção 1"); break;
-                case 2: System.out.println("Opção 2"); break;
-                case 3: System.out.println("Opção 3"); break;
-                case 4: fillBinaryTree(); break;
-                case 5: autoFillBinaryTree(); break;
+                case 1: compare(); break;
+                case 2: fillBinaryTree(); break;
+                case 3: autoFillBinaryTree(); break;
                 default: System.out.println("Opção inválida, tente novamente!"); break;
             }
 

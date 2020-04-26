@@ -3,6 +3,7 @@ package Unicatolica.ArvoreBusca.Model;
 public class Node {
 
     private int defaultValue;
+    private Node parent;
     private Node left;
     private Node right;
 
@@ -10,6 +11,15 @@ public class Node {
         this.defaultValue = value;
         this.right = null;
         this.left = null;
+        this.parent = null;
+    }
+
+    public Node getParent() {
+        return this.parent;
+    }
+
+    public void setParent(Node node) {
+        this.parent = node;
     }
 
     public void setValue(int value) {
@@ -36,6 +46,7 @@ public class Node {
         return this.right;
     }
 
+    @Override
     public String toString() {
         Integer wrapper = new Integer(this.defaultValue);
         return wrapper.toString();
